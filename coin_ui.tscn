@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dew7iic0qgt1a"]
+
+[ext_resource type="Script" uid="uid://c43v4wjvs46im" path="res://coin_ui.gd" id="1_emhfd"]
+
+[node name="coinUI" type="Control" unique_id=405314666]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_emhfd")
+
+[node name="Label" type="Label" parent="." unique_id=1735402247]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 35
+text = "0"

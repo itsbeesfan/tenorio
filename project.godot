@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="game"
+run/main_scene="uid://bff5i5jyg47e7"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+EventController="*uid://da55yx4iussof"
+GameController="*uid://dqyy045t0iix8"
 
 [input]
 

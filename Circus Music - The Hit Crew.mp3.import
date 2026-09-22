@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cty5a8svl11r0"
+path="res://.godot/imported/Circus Music - The Hit Crew.mp3-c1a55c04788948dbf0d20ffa55905098.mp3str"
+
+[deps]
+
+source_file="res://Circus Music - The Hit Crew.mp3"
+dest_files=["res://.godot/imported/Circus Music - The Hit Crew.mp3-c1a55c04788948dbf0d20ffa55905098.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

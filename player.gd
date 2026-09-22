@@ -1,11 +1,18 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 
 const SPEED = 400.0
 const JUMP_VELOCITY = -500.0
 
+@onready var player = $Sprite2D
 
 func _physics_process(delta: float) -> void:
+	
+	if (velocity.x > 1 or velocity.x <-1):
+		player.play("run")
+	else:
+		player.play("idle")
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -21,5 +28,8 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
+	var isLeft = velocity.x < 0
+	player.flip_h = isLeft
 
 	move_and_slide()
